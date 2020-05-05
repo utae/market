@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/__picker_iwf_actionBarSize"
+            android:orientation="horizontal"
+            android:background="@color/colorPrimary"
+            android:padding="5dp">
+
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:background="@null"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_back"
+                android:id="@+id/back_btn"/>
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:background="@android:color/white"
+                android:hint="검색어를 입력하세요."
+                android:textColorHint="@android:color/black"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:textCursorDrawable="@android:color/black"
+                android:id="@+id/edit_text"/>
+
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:background="@null"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_search"
+                android:id="@+id/search_btn"/>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/gray"
+            android:id="@+id/search_container">
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="3dp"
+                android:background="@null"
+                android:divider="@color/gray"
+                android:dividerHeight="1dp"
+                android:id="@+id/list_view"/>
+
+            <include
+                layout="@layout/goods_empty_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                android:id="@+id/empty_view"/>
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+</layout>

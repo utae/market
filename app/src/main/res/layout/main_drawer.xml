@@ -1,0 +1,574 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="260dp"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/lightGray">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_drawer_header_01"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_drawer_header_02"
+                    android:id="@+id/drawer_event"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="1dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:layout_marginRight="1dp"
+                        android:background="@android:color/white"
+                        android:text="야채"
+                        android:textSize="14sp"
+                        android:textColor="@android:color/black"
+                        android:id="@+id/category1"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:background="@android:color/white"
+                        android:text="청과"
+                        android:textSize="14sp"
+                        android:textColor="@android:color/black"
+                        android:id="@+id/category2"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="1dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:layout_marginRight="1dp"
+                        android:background="@android:color/white"
+                        android:text="냉장식품"
+                        android:textSize="14sp"
+                        android:textColor="@android:color/black"
+                        android:id="@+id/category3"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:background="@android:color/white"
+                        android:text="냉동식품"
+                        android:textSize="14sp"
+                        android:textColor="@android:color/black"
+                        android:id="@+id/category4"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="1dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:layout_marginRight="1dp"
+                        android:background="@android:color/white"
+                        android:text="정육"
+                        android:textSize="14sp"
+                        android:textColor="@android:color/black"
+                        android:id="@+id/category5"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:background="@android:color/white"
+                        android:text="생선/육계"
+                        android:textSize="14sp"
+                        android:textColor="@android:color/black"
+                        android:id="@+id/category6"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="1dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:layout_marginRight="1dp"
+                        android:background="@android:color/white"
+                        android:text="조미료"
+                        android:textSize="14sp"
+                        android:textColor="@android:color/black"
+                        android:id="@+id/category7"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:background="@android:color/white"
+                        android:text="가공식품"
+                        android:textSize="14sp"
+                        android:textColor="@android:color/black"
+                        android:id="@+id/category8"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="1dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:layout_marginRight="1dp"
+                        android:background="@android:color/white"
+                        android:text="반찬"
+                        android:textSize="14sp"
+                        android:textColor="@android:color/black"
+                        android:id="@+id/category9"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:layout_marginRight="1dp"
+                        android:background="@android:color/white"
+                        android:text="건어류"
+                        android:textSize="14sp"
+                        android:textColor="@android:color/black"
+                        android:id="@+id/category10"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="1dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:layout_marginRight="1dp"
+                        android:background="@android:color/white"
+                        android:text="장류"
+                        android:textSize="14sp"
+                        android:textColor="@android:color/black"
+                        android:id="@+id/category11"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:background="@android:color/white"
+                        android:text="통조림/커피"
+                        android:textSize="14sp"
+                        android:textColor="@android:color/black"
+                        android:id="@+id/category12"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="1dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:layout_marginRight="1dp"
+                        android:background="@android:color/white"
+                        android:text="신선식품"
+                        android:textSize="14sp"
+                        android:textColor="@android:color/black"
+                        android:id="@+id/category13"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:background="@android:color/white"
+                        android:text="음료/유제품"
+                        android:textSize="14sp"
+                        android:textColor="@android:color/black"
+                        android:id="@+id/category14"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="1dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:layout_marginRight="1dp"
+                        android:background="@android:color/white"
+                        android:text="바디용품"
+                        android:textSize="14sp"
+                        android:textColor="@android:color/black"
+                        android:id="@+id/category15"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:background="@android:color/white"
+                        android:text="세제"
+                        android:textSize="14sp"
+                        android:textColor="@android:color/black"
+                        android:id="@+id/category16"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="1dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:layout_marginRight="1dp"
+                        android:background="@android:color/white"
+                        android:text="쌀"
+                        android:textSize="14sp"
+                        android:textColor="@android:color/black"
+                        android:id="@+id/category17"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:background="@android:color/white"
+                        android:text="스낵"
+                        android:textSize="14sp"
+                        android:textColor="@android:color/black"
+                        android:id="@+id/category18"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="1dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:layout_marginRight="1dp"
+                        android:background="@android:color/white"
+                        android:text="생활용품"
+                        android:textSize="14sp"
+                        android:textColor="@android:color/black"
+                        android:id="@+id/category19"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:background="@android:color/white"
+                        android:text="위생용품"
+                        android:textSize="14sp"
+                        android:textColor="@android:color/black"
+                        android:id="@+id/category20"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="1dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:layout_marginRight="1dp"
+                        android:background="@android:color/white"
+                        android:text="기호식품"
+                        android:textSize="14sp"
+                        android:textColor="@android:color/black"
+                        android:id="@+id/category21"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:background="@android:color/white"
+                        android:text="잡화"
+                        android:textSize="14sp"
+                        android:textColor="@android:color/black"
+                        android:id="@+id/category22"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="1dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:layout_marginRight="1dp"
+                        android:background="@android:color/white"
+                        android:text="밀가루"
+                        android:textSize="14sp"
+                        android:textColor="@android:color/black"
+                        android:id="@+id/category23"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@android:color/white"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:id="@+id/drawer_market_info">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@null"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ic_store"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="마트정보"
+                        android:textSize="18sp"
+                        android:textColor="@android:color/black"/>
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@null"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ic_arrow_right"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@android:color/white"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:id="@+id/drawer_notice">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@null"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ic_mic"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="공지사항"
+                        android:textSize="18sp"
+                        android:textColor="@android:color/black"/>
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@null"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ic_arrow_right"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@android:color/white"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:id="@+id/drawer_order_history">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@null"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ic_list"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="주문내역"
+                        android:textSize="18sp"
+                        android:textColor="@android:color/black"/>
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@null"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ic_arrow_right"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:id="@+id/drawer_help">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@null"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ic_work"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="고객지원"
+                        android:textSize="18sp"
+                        android:textColor="@android:color/black"/>
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@null"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ic_arrow_right"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="bottom|center_horizontal"
+                    android:text="Ver 1.0.0"
+                    android:textSize="10sp"
+                    android:textColor="@color/darkGray"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <ImageView
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="165dp"
+            android:gravity="center"
+            android:background="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_drawer_popular"
+            android:id="@+id/drawer_sale"/>
+
+    </FrameLayout>
+
+</layout>

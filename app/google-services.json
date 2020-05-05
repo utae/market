@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "991256441223",
+    "firebase_url": "https://market-75040.firebaseio.com",
+    "project_id": "market-75040",
+    "storage_bucket": "market-75040.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:991256441223:android:83d56ac0a575da78",
+        "android_client_info": {
+          "package_name": "kr.co.t_woori.market"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "991256441223-h0vk6p6tlfhp0pjtsp2eplvt0331cq6d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACzTCAa2jsUVzFn1E9HF0AI1E_0IXSY7A"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

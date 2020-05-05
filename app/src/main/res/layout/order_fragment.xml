@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/lightGray">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/border_1dp_gray_round">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="배송지"
+                        android:textSize="18sp"
+                        android:textColor="@android:color/black"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:text="배송가능지역"
+                            android:textSize="14sp"
+                            android:textColor="@android:color/holo_red_dark"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="비래동, 비래스토아 반경 3km이내 지역"
+                            android:textSize="14sp"
+                            android:textColor="@android:color/black"/>
+
+                    </LinearLayout>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/white"
+                        android:textSize="18sp"
+                        android:textColor="@android:color/black"
+                        android:inputType="text"
+                        android:maxLength="50"
+                        android:id="@+id/address_edt"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/border_1dp_gray_round">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="희망 배송시간 (당일기준 주문후 2시간이후부터)"
+                        android:textSize="18sp"
+                        android:textColor="@android:color/black"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:text="배송가능시간"
+                            android:textSize="14sp"
+                            android:textColor="@android:color/holo_red_dark"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="08:00 ~ 19:30"
+                            android:textSize="14sp"
+                            android:textColor="@android:color/black"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/white"
+                        android:text="선택"
+                        android:textSize="18sp"
+                        android:textColor="@android:color/black"
+                        android:id="@+id/delivery_time_text_view"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/border_1dp_gray_round">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="수령인 (주문자와 다를 경우 입력)"
+                        android:textSize="18sp"
+                        android:textColor="@android:color/black"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/white"
+                        android:textSize="18sp"
+                        android:textColor="@android:color/black"
+                        android:inputType="text"
+                        android:maxLength="10"
+                        android:id="@+id/recipient_edt"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/border_1dp_gray_round">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="연락처"
+                        android:textSize="18sp"
+                        android:textColor="@android:color/black"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/white"
+                        android:textSize="18sp"
+                        android:textColor="@android:color/black"
+                        android:inputType="text"
+                        android:maxLength="11"
+                        android:id="@+id/phone_edt"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/border_1dp_gray_round">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="배송 요청사항"
+                        android:textSize="18sp"
+                        android:textColor="@android:color/black"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/white"
+                        android:textSize="18sp"
+                        android:textColor="@android:color/black"
+                        android:inputType="text"
+                        android:maxLength="250"
+                        android:id="@+id/request_edt"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/border_1dp_gray_round">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="결제 방식"
+                        android:textSize="18sp"
+                        android:textColor="@android:color/black"/>
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="5dp"
+                        android:id="@+id/payment_radio_group">
+
+                        <RadioButton
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="현금결제"
+                            android:id="@+id/cash_btn"/>
+
+                        <RadioButton
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="카드결제"
+                            android:id="@+id/card_btn"/>
+
+                    </RadioGroup>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:text="상품수령 후 결제할 수단을 선택해주세요."
+                        android:textSize="14sp"
+                        android:textColor="@android:color/holo_red_dark"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/border_1dp_gray_round">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="포인트 사용"
+                        android:textSize="18sp"
+                        android:textColor="@android:color/black"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:text="사용가능포인트"
+                            android:textSize="14sp"
+                            android:textColor="@android:color/holo_red_dark"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="14sp"
+                            android:textColor="@android:color/black"
+                            android:id="@+id/point_text_view"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@android:color/white"
+                            android:textSize="18sp"
+                            android:textColor="@android:color/black"
+                            android:inputType="number"
+                            android:maxLength="250"
+                            android:id="@+id/point_use_edt"/>
+
+                        <Button
+                            android:layout_width="60dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:background="@android:color/darker_gray"
+                            android:text="사용"
+                            android:textSize="18sp"
+                            android:textColor="@android:color/black"
+                            android:id="@+id/point_use_btn"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/border_1dp_gray_round">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="결제 금액"
+                        android:textSize="18sp"
+                        android:textColor="@android:color/black"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="5dp"
+                        android:padding="5dp"
+                        android:background="@android:color/darker_gray">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="주문 금액"
+                            android:textSize="18sp"
+                            android:textColor="@android:color/black"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:textColor="@android:color/black"
+                            android:id="@+id/order_price_text_view"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="5dp"
+                        android:padding="5dp"
+                        android:background="@android:color/darker_gray">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="배송비"
+                            android:textSize="18sp"
+                            android:textColor="@android:color/black"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0원"
+                            android:textSize="18sp"
+                            android:textColor="@android:color/black"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="5dp"
+                        android:padding="5dp"
+                        android:background="@android:color/darker_gray">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="포인트"
+                            android:textSize="18sp"
+                            android:textColor="@android:color/black"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0원"
+                            android:textSize="18sp"
+                            android:textColor="@android:color/black"
+                            android:id="@+id/point_use_text_view"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="5dp"
+                        android:padding="5dp"
+                        android:background="#FAFAA0">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="결제예정금액"
+                            android:textSize="18sp"
+                            android:textColor="@android:color/holo_red_dark"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:textColor="@android:color/black"
+                            android:id="@+id/total_price_text_view"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:padding="15dp">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"
+                android:background="@android:color/darker_gray"
+                android:text="취소"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:id="@+id/cancel_btn"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/darker_gray"
+                android:text="주문하기"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:id="@+id/order_btn"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</layout>
